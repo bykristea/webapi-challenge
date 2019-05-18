@@ -9,7 +9,7 @@ const db = require('./data/dbConfig.js');
 
 const projectRouter = require('./data/projectModelRouter');
 const actionRouter = require('./data/actionRouter.js');
-//importing router from projectModleRouter and actionRouter
+//importing router from projectModelRouter and actionRouter
 
 const server = express();
 //telling server to use express

@@ -62,7 +62,7 @@ router.get('/:id/actions', (req, res) => {
     const { id } = req.params;
     db.remove(id)
       .then(count => {
-        res.json({ message: `succesfully deleted ${count} records` })
+        res.json({ message: `successfully deleted ${count} records` })
       })
   });
   //edits project
