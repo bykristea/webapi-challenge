@@ -1,8 +1,8 @@
 const express = require('express');
 // requiring express. 
 const helmet = require('helmet');
-
 const morgan = require('morgan');
+const cors = require('cors');
 
 const db = require('./data/dbConfig.js');
 // calling/importing db from the dbConfig.js file
@@ -17,7 +17,8 @@ const server = express();
 server.use(
     express.json(),
     morgan('short'),
-    helmet()
+    helmet(),
+    cors()
     );
 //middleware to use
 
