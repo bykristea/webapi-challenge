@@ -14,7 +14,8 @@ Go code!
 */
 
 const server = require('./server.js');
+const port = 9000;
 
-server.listen(9000, () => {
-    console.log('\n*** Server Running on port 9000 ***\n')
+server.listen(port, () => {
+    console.log(`\n*** Server Running on port ${port} ***\n`)
 });
