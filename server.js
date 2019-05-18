@@ -8,7 +8,8 @@ const db = require('./data/dbConfig.js');
 // calling/importing db from the dbConfig.js file
 
 const projectRouter = require('./data/projectModelRouter');
-//importing router from projectModleRouter
+const actionRouter = require('./data/actionRouter.js');
+//importing router from projectModleRouter and actionRouter
 
 const server = express();
 //telling server to use express
@@ -21,7 +22,8 @@ server.use(
 //middleware to use
 
 server.use('/api/projects', projectRouter);
-//telling the url to use the projectRouter calls at
+server.use('/api/actions', actionRouter);
+//telling the url to use for each router
 
 server.get('/', (req, res) => {
     res.send(`
