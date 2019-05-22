@@ -14,7 +14,7 @@ Go code!
 */
 
 const server = require('./server.js');
-const port = 9000;
+const port = 6000;
 
 server.listen(port, () => {
     console.log(`\n*** Server Running on port ${port} ***\n`)
