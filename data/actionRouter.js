@@ -47,7 +47,7 @@ router.get('/', (req, res) => {
   //edit an action
   router.put('/:id', (req, res) => {
     const action = req.body;
-  const { project_id, description, notes } = req.body;
+//   const { project_id, description, notes } = req.body;
   const {id} = req.params
   if (action.project_id && action.description.length < 128 && action.description && action.notes) {
     db.update(id, action)

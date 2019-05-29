@@ -9,7 +9,6 @@ router.get('/', (req, res) => {
         res.json(project);
     })
     .catch(error =>{  
-        console.log(error);
         res.status(500).json({
             message: "Error retrieving Projects"
         })
